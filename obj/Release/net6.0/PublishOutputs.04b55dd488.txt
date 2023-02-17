@@ -1,5 +1,0 @@
-C:\Users\ASUS\Desktop\cs\bin\Release\net6.0\publish\cs.exe
-C:\Users\ASUS\Desktop\cs\bin\Release\net6.0\publish\cs.dll
-C:\Users\ASUS\Desktop\cs\bin\Release\net6.0\publish\cs.deps.json
-C:\Users\ASUS\Desktop\cs\bin\Release\net6.0\publish\cs.runtimeconfig.json
-C:\Users\ASUS\Desktop\cs\bin\Release\net6.0\publish\cs.pdb
