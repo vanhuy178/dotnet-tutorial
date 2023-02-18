@@ -105,8 +105,136 @@ namespace MyApplication
             int year = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Your age is: " + age + ' ' + " Your year of birth is: " + year);
 
-        }
 
+            int sum1 = 100 + 50;
+            int sum2 = sum1 + 200;
+            int sum3 = sum1 + sum2;
+
+
+
+            // MATH OPERATOR: Math.min(value, value), Math.max(value, value), Math.sqrt(), Math.Abs(), Math.round(), ...
+
+            // C# STRING
+            string simpleText = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            Console.WriteLine("The lenght of the text: " + simpleText.Length); // TAKE THE LENGTH OF THE STRING
+            Console.WriteLine("To UpperCase: " + simpleText.ToUpper());
+            Console.WriteLine("To LowerCase: " + simpleText.ToLower());
+
+            // CONCATSTRING WITH + 
+            // C# OPERATOR USING BOTH ADDITION AND CONCATENATION
+
+            // Remember: + with number is number but + with string is string 
+
+            // INTERPOLATION
+
+            // string firstName = "John";
+            // string lastName = "Doe";
+            // string name = $"My full name is: {firstName} {lastName}";
+            // Console.WriteLine(name);
+
+            // C# ACCESSS STRING
+            string accessString = "NguyenVanHuy";
+
+            // ACCESS BY []
+
+            string firstCharatertAccessString = Convert.ToString(accessString[0]);
+
+
+            string myString = "Hello";
+            Console.WriteLine(myString[0]);
+            Console.WriteLine(firstCharatertAccessString);
+
+            // YOU CAN FIND THE INDEX POSITION OF SPECIFIC CHARACTIER IN A STRING
+
+            string status = "Nguyen Van Huy";
+
+            // This will work if you are sure you have a first name and a last name.
+            // string fullName = "Adrian Rules";
+            // var names = fullName.Split(' ');
+            // string firstName = names[0];
+            // string lastName = names[1];
+
+            // Strings - Special Characters
+
+
+            // BOOLEAN SECTION
+            int theAge = 18;
+            int votingAge = 18;
+            if (theAge >= votingAge)
+            {
+                Console.WriteLine("Old Enough to vote");
+            }
+            else
+            {
+
+                Console.WriteLine("Not old Enough to vote");
+            }
+
+            // SWITCH CASE
+            int day = 2;
+            switch (day)
+            {
+                case 2:
+                    Console.WriteLine("Monday");
+                    break;
+                case 3:
+                    Console.WriteLine("Tuesday");
+                    break;
+                default:
+                    Console.WriteLine("There are no match");
+                    break;
+            }
+
+            // WHILE LOOP
+            int whileLoopValue = 0;
+            int whileLoopRange = 10;
+            while (whileLoopValue < whileLoopRange)
+            {
+                Console.WriteLine($"index at {whileLoopValue}");
+                whileLoopValue++;
+            }
+
+
+            // DO WHITE
+            do
+            {
+                Console.WriteLine($"index at {whileLoopValue}");
+                whileLoopValue++;
+
+            }
+            while (whileLoopValue < whileLoopRange);
+
+
+            // WHILE WITH STRING
+
+            string nameString = "Nguyen-Van-Huy";
+            string newString = "";
+            int lengthOfNameString = nameString.Length;
+
+            for (int i = 0; i < lengthOfNameString; i++)
+            {
+                if (nameString[i] == '-')
+                {
+                    continue;
+                }
+                // Console.WriteLine(nameString[i]);
+                newString += nameString[i];
+            }
+
+            // 2D ARRAY
+            int[,] numbers = { { 1, 4, 2 }, { 3, 6, 8 } };
+
+            int[,] array2D = { { }, { } };
+
+            for (int i = 0; i < numbers.GetLength(0); i++)
+            {
+                for (int j = 0; j < numbers.GetLength(1); j++)
+                {
+                    Console.WriteLine(numbers[i, j]);
+                }
+            }
+
+        }
 
     }
 }
